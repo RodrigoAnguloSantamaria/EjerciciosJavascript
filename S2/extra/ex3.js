@@ -31,15 +31,32 @@ const users = [
 let listSound=[];
 let tempArray=[];
 let counter=0;
-for (const user of users) {
-    //console.log(user.favoritesSounds)
-    for (const sound in user.favoritesSounds) {
-        //console.log(sound)
-        if(!listSound.includes(sound))
-            counter++;
-            listSound.push(sound,counter);
-        else{
-            
-        }
+for (const iterator of users) {
+    //console.log(iterator.favoritesSounds)
+
+    for (const key in iterator.favoritesSounds) {
+        console.log("key: "+key)
+            if(!listSound.length){
+                listSound.push({sonido:key,contador:1});
+            }
+            else{
+                let isInList=false;
+                for (let index = 0; index < listSound.length; index++) {
+                    const element = listSound[index];
+                    console.log("sonido en lista "+element.sonido)
+                    if(element.sonido == key){
+                        element.contador++;
+                        isInList=true;
+                        break;
+                    }
+                }
+                if(isInList==false){
+                    listSound.push({sonido:key,contador:1});
+                }
+            }
     }
 }
+        
+    
+console.log(listSound)
+
