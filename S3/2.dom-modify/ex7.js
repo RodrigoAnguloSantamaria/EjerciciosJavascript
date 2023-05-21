@@ -1,7 +1,8 @@
 const allItems$$ = document.querySelectorAll(".fn-remove-me");
-for (let index = 0; index < allItems$$.length; index++) {
-    const element = allItems$$[index];
-    element.remove();
+//console.log(allItems$$)
+
+for (const iterator of allItems$$) {
+    //console.log(iterator)
+    iterator.remove();
     
 }
-console.log(allItems$$)
