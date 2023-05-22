@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.divContainer{
+    width:90%;
+    justify-self: center;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    margin: 20px;
+    
+}
+.section{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    width:20%;
+    height:300px;
+    border: 2px solid gray;
+}
+.figure{
+    width: 100%;
+    height: 250px;
+}
