@@ -1,0 +1,70 @@
+.planetFigure{
+    width: 60%;
+    height:150px;
+    margin: 10px 10px 20px 10px;
+}
+.planets{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.item{
+    border: 1px solid rgb(195, 194, 194);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+.item span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.characters{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border: 1px solid rgb(195, 194, 194);
+    border-radius: 16px;
+}
+.itemcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.characterimg{
+    width: 125px;
+    height: 300px;
+}
+.search{
+    margin-top: 20px;
+    width: 100%;
+   display: flex;
+   justify-content: center;
+}
+.search input{
+    width: 30%;
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.description{
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.description p{
+    width: 60%;
+    text-align: justify;
+}
