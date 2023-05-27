@@ -36,12 +36,12 @@ button$$.addEventListener("click",splitName);
 let ivaPrice=0;
 let totalPrice=0;
 
-// EXERCISE 2
+// EXERCISE 2  CALCULATE PRICE
 function finalPrices(valor){
     console.log(valor);
      ivaPrice=parseFloat((valor)*1.21).toFixed(2);
-     totalPrice=parseFloat(ivaPrice+4.95).toFixed(2);
- 
+     totalPrice=parseFloat(ivaPrice)+parseFloat(4.95);
+  
 
 }
 
@@ -61,6 +61,9 @@ function calculatePrice(){
 const buttonPrice$$=document.querySelector(".finalPrice");
 buttonPrice$$.addEventListener("click",calculatePrice);
 
+// EXERCISE 3 COUNT LETTER A
+
+const animals = ["Salamandra montesa", "Delinicio", "Tigre de puntos", "Saltamontañas"]
 
 
 

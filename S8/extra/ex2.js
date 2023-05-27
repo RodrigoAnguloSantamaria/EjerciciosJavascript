@@ -30,6 +30,7 @@ const dataAsync = async()=>{
         document.body.appendChild(div$$);
         
     });
+    
 }
 
 dataAsync()
